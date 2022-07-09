@@ -35,4 +35,6 @@ const invokeAction = async ({ action, id, email, name, phone }) => {
   }
 };
 
-invokeAction(argv);
+(async () => {
+  await invokeAction(argv);
+})();
